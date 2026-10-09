@@ -24,11 +24,25 @@ In this lab, I built everything from scratch on my personal computer to gain rea
 | -------- | -------- | -------- |
 | DC External NIC  | Dynamic  | DHCP from Router  |
 | DC Internal NIC  | `172.16.0.1`  | Static  |
-| Client Internal NIC | `172.16.0.100` | DHCP from DC |
+| DC Internal DNS | `127.0.0.1` | Loopback |
+| Client Internal NIC | Dynamic | DHCP from DC |
 | DHCP Scope | `172.16.0.100-200` | Pool |
-| Subnet Mask | 255.255.255.0 | /24 |
-| Default Gateway (Client) | 172.168.0.1
-| DNS Server (Client) | `172.16.0.1` | 
+| Subnet Mask | `255.255.255.0` | /24 |
+| Default Gateway (Client) | `172.168.0.1` | DC Internal NIC |
+| DNS Server (Client) | `172.16.0.1` | DC Internal NIC |
+
+
+### Domain Configuration
+
+
+
+|  |  |
+| -------- | -------- |
+| Fully Qualified Domain Name  | mydomain.com  |
+| Domain Controller Hostname  | DC  |
+| Client Hostname | Client1 |
+| Total Users | 1,000 |
+
 
 # What I Used
 
