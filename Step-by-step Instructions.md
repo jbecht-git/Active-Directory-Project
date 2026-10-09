@@ -19,7 +19,8 @@
    4. Allocate hardware as needed  
    5. Make sure shared clipboard and drag’n’drop are set to bidirectional  
    6. Enable two network adapters, the first one should be set to NAT and the second one should be set to internal network  
-   7. Start your Domain Controller VM  
+   7. Start your Domain Controller VM
+      ![Reference Picture](
 3. **Set up the server**  
    1. Install the Standard Desktop edition of the OS  
    2. If prompted, select custom install instead of upgrade  
