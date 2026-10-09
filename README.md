@@ -2,7 +2,7 @@
 
 <div align="center">
 
-**Fully-configured Active Directory environment built from scratch on Oracle VirtualBox containing 1,000 user profiles, NAT, DHCP, and a Dual-NIC Domain Controller**
+**Fully-configured Active Directory environment built from scratch on Oracle VirtualBox containing 1,000 user profiles, RAS/NAT, DHCP, and a Dual-NIC Domain Controller**
 
 </div>
 
@@ -48,24 +48,25 @@ In this lab, I built everything from scratch on my personal computer to gain rea
 # What I Used
 
 ### Oracle VirtualBox
-
+Used to simulate the Client and Domain Controller OSs
 
 ### Windows 11 Pro
-
+Installed on the Client VM to connect to the domain.
 
 ### Windows Server 2025
-
+Installed on the Domain Controller VM to host the active directory.
 
 ### Remote Access Server w/ NAT
-
+Installed onto the Active Directory so the Client could receive internet connection through the internal network. Also made it possible for the DC and Client to share a public IP, increasing security and limiting the amount of public IPs used from office machines.
 
 ### DHCP
-
+Provides automatic internal IP addressing to the Client VM. Also used by the external network to connect to the local router and establish a connection to the internet.
 
 ### Domain
+Links the Client VM to the Active Directory, linking all accounts stored in the the AD accessible from one machine.
 
-
-# What I Built
+### Powershell
+Ran a script that took 1,000 random names from a .txt file and added them as users in the domain with credentials ready to go.
 
 
 # Step-By-Step
