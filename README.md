@@ -8,9 +8,9 @@
 
 # Why I Started This Project
 
-There are many different entry-level IT concepts that are incorporated by Active Directory; IP addressing, group policy, creating and joining domains, and a lot more that aren't necessarily easy to fully grasp without hands on experience.
+There are many different entry-level IT concepts that are incorporated by Active Directory; IP addressing/Routing, creating and joining domains, and a lot more that aren't necessarily easy to fully grasp without hands on experience.
 
-In this lab, I built everything from scratch on my personal computer to gain realistic experience with all of these concepts and further my understanding of Information Technology.
+In this lab, I built everything from scratch on my personal computer to gain realistic experience with all of these concepts and to further my understanding of enterprise-level directories.
 
 # Architecture
 ![alt text](https://github.com/jbecht-git/Active-Directory-Project/blob/864f593631940dbbdda22215d4b9fb4fe414b713/AD_Architecture.drawio.png)
@@ -57,7 +57,7 @@ Installed on the Client VM to connect to the domain.
 Installed on the Domain Controller VM to host the active directory.
 
 ### Remote Access Server w/ NAT
-Installed onto the Active Directory so the Client could receive internet connection through the internal network. Also made it possible for the DC and Client to share a public IP, increasing security and limiting the amount of public IPs used from office machines.
+Installed onto the Active Directory so the Client could receive internet connection through the internal network. Also made it possible for the DC and Client to share a public IP, increasing security and limiting the amount of public IPs used from "office machines".
 
 ### DHCP
 Provides automatic internal IP addressing to the Client VM. Also used by the external network to connect to the local router and establish a connection to the internet.
@@ -73,9 +73,27 @@ Ran a script that took 1,000 random names from a .txt file and added them as use
 If you are interested in doing this project yourself or seeing how I did it, feel free to follow along using the instructions below.
 
 ![Step-by-step Guide](https://github.com/jbecht-git/Active-Directory-Project/blob/ffebd527c5f5a217779b8009513bf981845b77ab/Active%20Directory%20Home%20Lab%20Instructions.pdf)
+
 # Screenshots
 Here are some screenshots from the lab in chronological order.
 
 ![Screenshots](
 
 # What I learned
+
+### Virtualization
+* Delegate hardware and ran multiple VMs at the same time
+* Install operating systems from ISO files onto a Virtual Machine
+
+
+### Setting up an Active Directory and Domain
+* Elevate users to the "Administrator" level
+* Manage credentials for many users at once
+* Set up and joined a domain
+
+
+### Building and Maintaining a Network
+* Install and configure DHCP addressing for an internal network
+* Configure RAS and NAT to provide internet access to clients directly through the domain controller
+
+
