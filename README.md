@@ -36,11 +36,12 @@ In this lab, I built everything from scratch on my personal computer to gain rea
 
 
 
-|  |  |
+| Setting | Info |
 | -------- | -------- |
 | Fully Qualified Domain Name  | mydomain.com  |
 | Domain Controller Hostname  | DC  |
 | Client Hostname | Client1 |
+| Domain Admin | a-jbecht |
 | Total Users | 1,000 |
 
 
@@ -49,7 +50,20 @@ In this lab, I built everything from scratch on my personal computer to gain rea
 ### Oracle VirtualBox
 
 
-##
+### Windows 11 Pro
+
+
+### Windows Server 2025
+
+
+### Remote Access Server w/ NAT
+
+
+### DHCP
+
+
+### Domain
+
 
 # What I Built
 
