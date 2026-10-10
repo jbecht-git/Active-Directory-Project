@@ -72,7 +72,7 @@ Ran a script that took 1,000 random names from a .txt file and added them as use
 # Step-By-Step
 If you are interested in doing this project yourself or seeing how I did it, feel free to follow along using the instructions below.
 
-![Step-by-step Guide](https://github.com/jbecht-git/Active-Directory-Project/blob/ffebd527c5f5a217779b8009513bf981845b77ab/Active%20Directory%20Home%20Lab%20Instructions.pdf)
+![Step-by-step Guide](https://github.com/jbecht-git/Active-Directory-Project/blob/a26634de116dee10ee0065c93a84097d5a912dc8/Step-By-Step%20Instructions.md)
 
 
 # What I learned
