@@ -88,8 +88,7 @@
     4. Enter the powershell command \> `Set-ExacutionPolicy Unrestricted`  
     5. Enter another command \> `cd c: \users\[account]\[location]\AD_PS-master`  
     6. Run the script  
-13. **Create the Client VM**  
-   ![Reference](
+13. **Create the Client VM**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/b3be9aa576ebc47328ba81ef3e3f82a6b6c89ef4/Screenshots/Step%2013%3A%20Create%20the%20Client%20VM)
      1. Name: Client1  
     2. Version: Windows 11  
     3. ISO Image: Windows 11 ISO  
