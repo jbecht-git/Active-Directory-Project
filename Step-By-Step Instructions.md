@@ -41,7 +41,7 @@
       2. Input a manual IP, mask, and DNS  
    3. Rename computer to DC in system settings and restart  
 6. **Install Active Directory Domain Service**  
-   ![Reference](
+   ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/130cfc601a20dd9a834e486c69dd45b41dd10a1f/Screenshots/Step%206%3A%20Install%20Active%20Directory%20Domain%20Service)
     1. Navigate to your server manager and click add roles and features  
    2. Click next until you get to server roles and select Active Directory Domain Services and add feature and install  
 7. **Promote to a Domain Controller**  
