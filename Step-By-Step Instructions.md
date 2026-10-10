@@ -81,8 +81,7 @@
 11. **(Optional) Turn off IE Enhanced Security Configuration**  
     1. Navigate to your server manager and click Configure this local server  
     2. In the properties section, click on IE Enhanced Security configuration and turn it off for admins and users  
-12. **Create All Users**  
-   ![Reference](
+12. **Create All Users**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/1badd62f7cb0ad7c1dcf2f98ed8eee25d6be0747/Screenshots/Step%2012%3A%20Create%20All%20Users)
      1. Paste this [link](https://www.youtube.com/redirect?event=video_description&redir_token=QUZZTVljRlU1NHdsdTRQN3JmdFJQeWVoeEpGa3xBSTVJdTV0WjlCVjQwZzZ0MlNRenF6MG5DSXlTNFVjWjJPSjUxT3NtdTE4NVlYbUpwTldtZ2Q3NlVMYWNicXJFYk9VTkVtWnVMMHNOaXFxczRQU0dzUzJhSlpad0Qwd2sxbW92&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI) into a browser to download the script and names file  
     2. Navigate to the names.txt file and add your name at the top in first/last name format, close  
     3. Open PowerShell ISE as administrator and open 1\_CREATE\_USERS  
