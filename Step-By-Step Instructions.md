@@ -96,8 +96,7 @@
     5. Make sure shared clipboard and drag’n’drop are set to bidirectional  
     6. Have one network adapter enabled and change it from NAT to internal network  
     7. Start your Client VM  
-14. **Install Windows 11 Pro and Join the Domain**  
-  ![Reference](
+14. **Install Windows 11 Pro and Join the Domain**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/e90909a678387fe4a9deafb309ba8fa929d8e7dc/Screenshots/Step%2014%3A%20Install%20Windows%2011%20Pro%20and%20Join%20the%20Domain)
     1. On startup, select install Windows 11 Pro  
     2. When asked for a product key select “I don’t have a product key”  
     3. Custom install if prompted  
