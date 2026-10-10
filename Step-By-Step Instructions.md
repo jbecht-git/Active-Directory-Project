@@ -32,7 +32,7 @@
    3. Select CD Drive (D:) VirtualBox Guest additions then run the .amd64 file inside  
    4. Press next twice then install and manually reboot the server VM  
 5. **Setting Up IP Addressing**  
-   ![Reference](
+   ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/6ccd9ae12002d838b06c8c6175525ea96432c82e/Screenshots/Step%205%3A%20Setting%20up%20IP%20addressing)
     1. Navigate to Advanced Network Settings in the Control Panel, you should see two adapters. Determine which is for the internal network and which is for the external network and rename accordingly.  
       1. External IP will probably be a 10.0 address  
       2. Internal Ip will have an APIPA address  
