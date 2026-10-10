@@ -46,8 +46,7 @@
    2. Select “Add a new forest” and specify the root domain name ([mydomain.com](http://mydomain.com))  
    3. Click next and add a DSRM password (Password1)  
    4. Click next several times then click install and restart  
-8. **Create a Domain Admin Account**  
-   ![Reference](
+8. **Create a Domain Admin Account**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/045bcf542870f571053415ad6e4ebd737030b92e/Screenshots/Step%208%3A%20Create%20a%20Domain%20Admin%20Account)
    1. Press start and navigate to Active Directory Users and Computers  
    2. Right click the domain, add a new OU  
    3. Name the OU “\_Admins” and uncheck the box underneath “Protect container from accidental deletion”  
