@@ -57,8 +57,7 @@
    8. In the box titled “Enter the object names to select” type “Domain Admins” and click on Check Names  
    9. Click okay and apply changes  
    10. Sign out and sign back in on the administrator account  
-9. **Install RAS and NAT**  
-  ![Reference](
+9. **Install RAS and NAT**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/c61cc0ccfff697f9aae79ddb817b87da778355d2/Screenshots/Step%209%3A%20Install%20RAS%20and%20NAT)
    1. Navigate to your server manager and click add roles and features  
    2. Click next until you get to server roles and select Remote Access  
    3. Click next again until you get to Role services, select and install Routing (Direct Access and VPN should automatically be selected after this)  
