@@ -21,32 +21,37 @@
    5. Make sure shared clipboard and drag’n’drop are set to bidirectional  
    6. Enable two network adapters, the first one should be set to NAT and the second one should be set to internal network  
    7. Start your Domain Controller VM  
-4. **Set Up the Server**  
-   1. Install the Standard Desktop edition of the OS  
+3. **Set Up the Server**  
+   ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/0b46c15c9aa502bf4ac641bdbd04e211ad383cd9/Screenshots/Step%203%3A%20Set%20up%20the%20server)
+    1. Install the Standard Desktop edition of the OS  
    2. If prompted, select custom install instead of upgrade  
    3. After installation apply a temp admin password (Password1)  
-5. **Insert Guest Addition CD Image**  
+4. **Insert Guest Addition CD Image**  
    1. Click on the Devices Tab on the top of the screen and select Insert Guest Addition CD image  
    2. Navigate to File Explore and go to this PC  
    3. Select CD Drive (D:) VirtualBox Guest additions then run the .amd64 file inside  
    4. Press next twice then install and manually reboot the server VM  
-6. **Setting Up IP Addressing**  
-   1. Navigate to Advanced Network Settings in the Control Panel, you should see two adapters. Determine which is for the internal network and which is for the external network and rename accordingly.  
+5. **Setting Up IP Addressing**  
+   ![Reference](
+    1. Navigate to Advanced Network Settings in the Control Panel, you should see two adapters. Determine which is for the internal network and which is for the external network and rename accordingly.  
       1. External IP will probably be a 10.0 address  
       2. Internal Ip will have an APIPA address  
    2. Assign an IP to your Internal Network Adapter  
       1. Click the drop down menu and select the edit button then navigate to IPv4 and double-click  
       2. Input a manual IP, mask, and DNS  
    3. Rename computer to DC in system settings and restart  
-7. **Install Active Directory Domain Service**  
-   1. Navigate to your server manager and click add roles and features  
+6. **Install Active Directory Domain Service**  
+   ![Reference](
+    1. Navigate to your server manager and click add roles and features  
    2. Click next until you get to server roles and select Active Directory Domain Services and add feature and install  
-8. **Promote to a Domain Controller**  
-   1. Click the flag in the top right corner of your server manager and click “Promote this server to a domain controller”  
+7. **Promote to a Domain Controller**  
+   ![Reference](
+    1. Click the flag in the top right corner of your server manager and click “Promote this server to a domain controller”  
    2. Select “Add a new forest” and specify the root domain name ([mydomain.com](http://mydomain.com))  
    3. Click next and add a DSRM password (Password1)  
    4. Click next several times then click install and restart  
-9. **Create a Domain Admin Account**  
+8. **Create a Domain Admin Account**  
+   ![Reference](
    1. Press start and navigate to Active Directory Users and Computers  
    2. Right click the domain, add a new OU  
    3. Name the OU “\_Admins” and uncheck the box underneath “Protect container from accidental deletion”  
@@ -57,7 +62,8 @@
    8. In the box titled “Enter the object names to select” type “Domain Admins” and click on Check Names  
    9. Click okay and apply changes  
    10. Sign out and sign back in on the administrator account  
-10. **Install RAS and NAT**  
+9. **Install RAS and NAT**  
+  ![Reference](
    1. Navigate to your server manager and click add roles and features  
    2. Click next until you get to server roles and select Remote Access  
    3. Click next again until you get to Role services, select and install Routing (Direct Access and VPN should automatically be selected after this)  
@@ -67,8 +73,9 @@
    7. Click next and then select Network Access Translation (NAT)  
    8. Click next and make sure “Use this public interface to connect to the internet” is selected and Internet is highlighted (might need to exit and try again)  
    9. Click next and finish  
-11. **Set up DHCP server on the Domain Controller**  
-    1. Navigate to your server manager and click add roles and features  
+10. **Set up DHCP server on the Domain Controller**  
+   ![Reference](
+     1. Navigate to your server manager and click add roles and features  
     2. Click next until you get to server roles, select DHCP and install  
     3. On the server manager, select tools then DHCP  
     4. Right-click the domains IPv4 and select new scope  
@@ -78,25 +85,28 @@
     8. Click yes and next, then type the domain controllers IP address for the Gateway (172.168.0.1) and click add  
     9. Click next and finish  
     10. Right-click the domain and select authorize then refresh IPv4 (should turn green after this)  
-12. **(Optional) Turn off IE Enhanced Security Configuration**  
+11. **(Optional) Turn off IE Enhanced Security Configuration**  
     1. Navigate to your server manager and click Configure this local server  
     2. In the properties section, click on IE Enhanced Security configuration and turn it off for admins and users  
-13. **Create All Users**  
-    1. Paste this [link](https://www.youtube.com/redirect?event=video_description&redir_token=QUZZTVljRlU1NHdsdTRQN3JmdFJQeWVoeEpGa3xBSTVJdTV0WjlCVjQwZzZ0MlNRenF6MG5DSXlTNFVjWjJPSjUxT3NtdTE4NVlYbUpwTldtZ2Q3NlVMYWNicXJFYk9VTkVtWnVMMHNOaXFxczRQU0dzUzJhSlpad0Qwd2sxbW92&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI) into a browser to download the script and names file  
+12. **Create All Users**  
+   ![Reference](
+     1. Paste this [link](https://www.youtube.com/redirect?event=video_description&redir_token=QUZZTVljRlU1NHdsdTRQN3JmdFJQeWVoeEpGa3xBSTVJdTV0WjlCVjQwZzZ0MlNRenF6MG5DSXlTNFVjWjJPSjUxT3NtdTE4NVlYbUpwTldtZ2Q3NlVMYWNicXJFYk9VTkVtWnVMMHNOaXFxczRQU0dzUzJhSlpad0Qwd2sxbW92&q=https%3A%2F%2Fgithub.com%2Fjoshmadakor1%2FAD_PS%2Farchive%2Frefs%2Fheads%2Fmaster.zip&v=MHsI8hJmggI) into a browser to download the script and names file  
     2. Navigate to the names.txt file and add your name at the top in first/last name format, close  
     3. Open PowerShell ISE as administrator and open 1\_CREATE\_USERS  
     4. Enter the powershell command \> `Set-ExacutionPolicy Unrestricted`  
     5. Enter another command \> `cd c: \users\[account]\[location]\AD_PS-master`  
     6. Run the script  
-14. **Create the Client VM**  
-    1. Name: Client1  
+13. **Create the Client VM**  
+   ![Reference](
+     1. Name: Client1  
     2. Version: Windows 11  
     3. ISO Image: Windows 11 ISO  
     4. Allocate hardware as needed  
     5. Make sure shared clipboard and drag’n’drop are set to bidirectional  
     6. Have one network adapter enabled and change it from NAT to internal network  
     7. Start your Client VM  
-15. **Install Windows 11 Pro and Join the Domain**  
+14. **Install Windows 11 Pro and Join the Domain**  
+  ![Reference](
     1. On startup, select install Windows 11 Pro  
     2. When asked for a product key select “I don’t have a product key”  
     3. Custom install if prompted  
