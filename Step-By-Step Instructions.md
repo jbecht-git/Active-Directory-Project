@@ -13,7 +13,7 @@
    2. [Windows 11 ISO](https://www.microsoft.com/en-us/software-download/windows11)  
    3. [VirtualBox \+ Extension Pack](https://www.virtualbox.org/wiki/Downloads)  
 2. **Open VirtualBox and Create a New Virtual Machine**
-   ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/0b46c15c9aa502bf4ac641bdbd04e211ad383cd9/Screenshots/Step%202%3A%20Create%20the%20Domain%20Controller%20VM)
+![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/0b46c15c9aa502bf4ac641bdbd04e211ad383cd9/Screenshots/Step%202%3A%20Create%20the%20Domain%20Controller%20VM)
    1. Name: Domain Controller  
    2. Version: Windows 11  
    3. ISO Image: Server 2025  
@@ -21,8 +21,7 @@
    5. Make sure shared clipboard and drag’n’drop are set to bidirectional  
    6. Enable two network adapters, the first one should be set to NAT and the second one should be set to internal network  
    7. Start your Domain Controller VM  
-3. **Set Up the Server**  
-   ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/0b46c15c9aa502bf4ac641bdbd04e211ad383cd9/Screenshots/Step%203%3A%20Set%20up%20the%20server)
+3. **Set Up the Server**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/0b46c15c9aa502bf4ac641bdbd04e211ad383cd9/Screenshots/Step%203%3A%20Set%20up%20the%20server)
     1. Install the Standard Desktop edition of the OS  
    2. If prompted, select custom install instead of upgrade  
    3. After installation apply a temp admin password (Password1)  
@@ -31,8 +30,7 @@
    2. Navigate to File Explore and go to this PC  
    3. Select CD Drive (D:) VirtualBox Guest additions then run the .amd64 file inside  
    4. Press next twice then install and manually reboot the server VM  
-5. **Setting Up IP Addressing**  
-   ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/6ccd9ae12002d838b06c8c6175525ea96432c82e/Screenshots/Step%205%3A%20Setting%20up%20IP%20addressing)
+5. **Setting Up IP Addressing**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/6ccd9ae12002d838b06c8c6175525ea96432c82e/Screenshots/Step%205%3A%20Setting%20up%20IP%20addressing)
     1. Navigate to Advanced Network Settings in the Control Panel, you should see two adapters. Determine which is for the internal network and which is for the external network and rename accordingly.  
       1. External IP will probably be a 10.0 address  
       2. Internal Ip will have an APIPA address  
@@ -40,12 +38,10 @@
       1. Click the drop down menu and select the edit button then navigate to IPv4 and double-click  
       2. Input a manual IP, mask, and DNS  
    3. Rename computer to DC in system settings and restart  
-6. **Install Active Directory Domain Service**  
-   ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/130cfc601a20dd9a834e486c69dd45b41dd10a1f/Screenshots/Step%206%3A%20Install%20Active%20Directory%20Domain%20Service)
+6. **Install Active Directory Domain Service**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/130cfc601a20dd9a834e486c69dd45b41dd10a1f/Screenshots/Step%206%3A%20Install%20Active%20Directory%20Domain%20Service)
     1. Navigate to your server manager and click add roles and features  
    2. Click next until you get to server roles and select Active Directory Domain Services and add feature and install  
-7. **Promote to a Domain Controller**  
-   ![Reference](
+7. **Promote to a Domain Controller**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/3879d0c37508d5b45be606274c9f04fbadfe5fd2/Screenshots/Step%207%3A%20Promote%20to%20a%20Domain%20Controller)
     1. Click the flag in the top right corner of your server manager and click “Promote this server to a domain controller”  
    2. Select “Add a new forest” and specify the root domain name ([mydomain.com](http://mydomain.com))  
    3. Click next and add a DSRM password (Password1)  
