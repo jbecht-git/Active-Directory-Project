@@ -67,8 +67,7 @@
    7. Click next and then select Network Access Translation (NAT)  
    8. Click next and make sure “Use this public interface to connect to the internet” is selected and Internet is highlighted (might need to exit and try again)  
    9. Click next and finish  
-10. **Set up DHCP server on the Domain Controller**  
-   ![Reference](
+10. **Set up DHCP server on the Domain Controller**  ![Reference](https://github.com/jbecht-git/Active-Directory-Project/tree/3a081f41ef121d2b90fb8b5fbedeecb7039301ae/Screenshots/Step%2010%3A%20Set%20up%20DHCP%20Server%20on%20the%20Domain%20Controller)
      1. Navigate to your server manager and click add roles and features  
     2. Click next until you get to server roles, select DHCP and install  
     3. On the server manager, select tools then DHCP  
