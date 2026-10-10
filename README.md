@@ -6,16 +6,16 @@
 
 </div>
 
-# Why I Started This Project
+## Why I Started This Project
 
 There are many different entry-level IT concepts that are incorporated by Active Directory; IP addressing/Routing, creating and joining domains, and a lot more that aren't necessarily easy to fully grasp without hands on experience.
 
 In this lab, I built everything from scratch on my personal computer to gain realistic experience with all of these concepts and to further my understanding of enterprise-level directories.
 
-# Architecture
+## Architecture
 ![alt text](https://github.com/jbecht-git/Active-Directory-Project/blob/864f593631940dbbdda22215d4b9fb4fe414b713/AD_Architecture.drawio.png)
 
-# Network Configuration
+## Network Configuration
 
 ### IP Addressing
 
@@ -45,7 +45,7 @@ In this lab, I built everything from scratch on my personal computer to gain rea
 | Total Users | 1,000 |
 
 
-# What I Used
+## What I Used
 
 ### Oracle VirtualBox
 Used to simulate the Client and Domain Controller OSs
@@ -69,13 +69,16 @@ Links the Client VM to the Active Directory, linking all accounts stored in the 
 Ran a script that took 1,000 random names from a .txt file and added them as users in the domain with credentials ready to go.
 
 
-# Step-By-Step
+## Step-By-Step
 If you are interested in doing this project yourself or seeing how I did it, feel free to follow along using the instructions below.
 
+<div align="center">
+ 
 ![Step-By-Step Instructions](https://github.com/jbecht-git/Active-Directory-Project/blob/de709646d99f324cf11fb87b8980829577c1d625/Step-By-Step%20Instructions.md)
 
+</div>
 
-# What I learned
+## What I learned
 
 ### Virtualization
 * Delegate hardware and ran multiple VMs at the same time
