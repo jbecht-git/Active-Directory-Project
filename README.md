@@ -74,10 +74,6 @@ If you are interested in doing this project yourself or seeing how I did it, fee
 
 ![Step-by-step Guide](https://github.com/jbecht-git/Active-Directory-Project/blob/ffebd527c5f5a217779b8009513bf981845b77ab/Active%20Directory%20Home%20Lab%20Instructions.pdf)
 
-# Screenshots
-Here are some screenshots from the lab in chronological order.
-
-![Screenshots](
 
 # What I learned
 
