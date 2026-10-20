@@ -12,6 +12,12 @@ There are many different entry-level IT concepts that are incorporated by Active
 
 In this lab, I built everything from scratch on my personal computer to gain realistic experience with all of these concepts and to further my understanding of enterprise-level directories.
 
+## Lab Objectives
+
+* **Build a functional Windows domain environment using Active Directory**
+
+* **Ensure that clients connect to the internet through the internal network and are automatically provided IP addresses**
+
 ## Architecture
 ![alt text](https://github.com/jbecht-git/Active-Directory-Project/blob/864f593631940dbbdda22215d4b9fb4fe414b713/AD_Architecture.drawio.png)
 
@@ -81,7 +87,7 @@ If you are interested in doing this project yourself or seeing how I did it, fee
 ## What I learned
 
 ### Virtualization
-* Delegate hardware and ran multiple VMs at the same time
+* Delegate hardware and run multiple VMs at the same time
 * Install operating systems from ISO files onto a Virtual Machine
 
 
